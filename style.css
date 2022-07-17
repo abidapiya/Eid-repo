@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* top banner style */
+
+.top-banner {
+    background: url(images/top-banner-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12.5% 15% 12.5% 15%;
+    position: relative;
+    z-index: 1;
+}
+
+.top-banner::before {
+    content: '';
+    background: linear-gradient(90deg, black, transparent);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .85;
+    z-index: -1;
+}
+
+.top-banner-txt {
+    width: 50%;
+}
+
+.top-banner h1 {
+    color: white;
+    font-size: 60px;
+    line-height: 75px;
+}
+
+.top-banner p {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 20px 100px 0 0;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background: #EF233C;
+    padding: 12px 20px 12px 20px;
+    border-radius: 5px;
+}
+
+
+/* description style */
+
+.description {
+    padding: 8% 15% 8% 15%;
+}
+
+.description h2 {
+    font-size: 40px;
+    color: #121212;
+    margin: 0 0 20px 0;
+}
+
+.description p {
+    font-size: 18px;
+    color: #707070;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+}
+
+.discrioption-text :nth-child(3) {
+    margin-bottom: 30px;
+}
+
+.half-width {
+    width: 45%;
+}
+
+.description-up {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 100px 0;
+}
+
+.discrioption-text {
+    padding: 4% 0 0 0;
+}
+
+.description img {
+    width: 100%;
+}
+
+.description-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-btn {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgb(239, 35, 60, .6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.img-btn:hover {
+    box-shadow: 0px 0px 25px white;
+}
+
+.img-btn i {
+    font-size: 25px;
+    background: white;
+    color: #EF233C;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-down {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* pyment style */
+.payment {
+    padding: 0 15% 0 15%;
+}
+
+.payment h2 {
+    font-size: 40px;
+    color: #121212;
+    text-align: center;
+    padding: 0 250px 0 250px;
+    margin: 0 0 20px 0;
+}
+
+.payment>p {
+    text-align: center;
+    font-size: 18px;
+    color: #707070;
+    padding: 0 200px 0 200px;
+    line-height: 30px;
+    margin: 0 0 50px 0;
+}
+
+.payment-up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-card {
+    display: flex;
+    height: 170px;
+    width: 50%;
+    margin: 0 10px 20px 10px;
+    background: #ffdbe6;
+    padding: 30px 30px 0 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-card:hover {
+    background: #dbf8ff;
+}
+
+.payment-card img {
+    width: 80%;
+}
+
+.payment-card h3 {
+    font-size: 23px;
+    color: #121212;
+    margin-bottom: 15px;
+}
+
+.payment-card p {
+    font-size: 18px;
+    color: #707070;
+}
+
+/* photo style */
+.photo {
+    padding: 10% 10% 10% 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    margin: 0 10px 0 10px;
+}
+
+/* donation style */
+.donation {
+    padding: 0 8% 8% 8%;
+}
+
+.donation h2 {
+    font-size: 40px;
+    color: #121212;
+    text-align: center;
+    padding: 0 200px 0 200px;
+    line-height: 55px;
+
+}
+
+.donation>p {
+    font-size: 18px;
+    color: #707070;
+    padding: 0 250px 0 250px;
+    text-align: center;
+    margin: 15px 0 50px 0;
+}
+
+.donate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.donate-card {
+    width: 33%;
+    border: 1px solid #c9c9c9;
+    border-radius: 13px;
+    margin: 0 10px 0 10px;
+}
+
+.donate-card-txt {
+    padding: 20px 20px 40px 20px;
+}
+
+.donate-card h4 {
+    font-size: 20px;
+    color: #121212;
+    margin-bottom: 15px;
+}
+
+.donate-card p {
+    font-size: 18px;
+    color: #707070;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+}
+
+.donate-card img {
+    width: 100%;
+}
+
+.donate-card-txt a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #EF233C;
+    text-underline-offset: 2px;
+}
+
+/* footer style */
+footer {
+    background: #0B0D17;
+    padding: 40px 0 40px 0;
+}
+
+
+footer h3 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    color: #EF233C;
+    font-weight: 200;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
